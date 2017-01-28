@@ -1,0 +1,145 @@
+\hypertarget{class_simple_timer}{}\subsection{Simple\+Timer Class Reference}
+\label{class_simple_timer}\index{Simple\+Timer@{Simple\+Timer}}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_timer_af0c18d77bcd3a28f41fb09b3f1358543}{Simple\+Timer} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_simple_timer_ad29e9a56c18bb1e378b0bd125e50c62a}{$\sim$\+Simple\+Timer} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_simple_timer_afa298cf96261fc9d9af0d6ea8ece2ae6}{start} ()
+\begin{DoxyCompactList}\small\item\em Start control. \end{DoxyCompactList}\item 
+void \hyperlink{class_simple_timer_a07a7dbb801e7f805f7777fdf8f3ef108}{stop} ()
+\begin{DoxyCompactList}\small\item\em Stop control. \end{DoxyCompactList}\item 
+\hypertarget{class_simple_timer_a0ffb684ba659cde3c056fdcaf98215df}{}void {\bfseries get\+Elapsed\+Time} (char $\ast$time\+Str)\label{class_simple_timer_a0ffb684ba659cde3c056fdcaf98215df}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_simple_timer_a647f94abb82363c9bf3fdcbe9f3c4df6}{}static const char {\bfseries N\+U\+L\+L\+\_\+\+C\+H\+A\+R} = \textquotesingle{}\textbackslash{}0\textquotesingle{}\label{class_simple_timer_a647f94abb82363c9bf3fdcbe9f3c4df6}
+
+\item 
+\hypertarget{class_simple_timer_a2036ce4a7884555b87d64238ea14800c}{}static const char {\bfseries R\+A\+D\+I\+X\+\_\+\+P\+O\+I\+N\+T} = \textquotesingle{}.\textquotesingle{}\label{class_simple_timer_a2036ce4a7884555b87d64238ea14800c}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_simple_timer_a17c86670290c97a0055b79876095c407}{}struct timeval start\+Data {\bfseries end\+Data}\label{class_simple_timer_a17c86670290c97a0055b79876095c407}
+
+\item 
+\hypertarget{class_simple_timer_a72745bd993af98de9124109466a7ce30}{}long int {\bfseries begin\+Time}\label{class_simple_timer_a72745bd993af98de9124109466a7ce30}
+
+\item 
+\hypertarget{class_simple_timer_a1ed4f7205115e77cadbfc34786d29d97}{}long int {\bfseries end\+Time}\label{class_simple_timer_a1ed4f7205115e77cadbfc34786d29d97}
+
+\item 
+\hypertarget{class_simple_timer_a6bc1a9320bc1fab78ff607b121832d93}{}long int {\bfseries sec\+Time}\label{class_simple_timer_a6bc1a9320bc1fab78ff607b121832d93}
+
+\item 
+\hypertarget{class_simple_timer_a4f9f23b76dcdafa469d4364a85a6c554}{}long int {\bfseries micro\+Sec\+Time}\label{class_simple_timer_a4f9f23b76dcdafa469d4364a85a6c554}
+
+\item 
+\hypertarget{class_simple_timer_afabfde4275b1a1dd3511d73ba156a627}{}bool {\bfseries running}\label{class_simple_timer_afabfde4275b1a1dd3511d73ba156a627}
+
+\item 
+\hypertarget{class_simple_timer_ac5eb8ccc2ba48e7678266af458835606}{}bool {\bfseries data\+Good}\label{class_simple_timer_ac5eb8ccc2ba48e7678266af458835606}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{class_simple_timer_af0c18d77bcd3a28f41fb09b3f1358543}{}\index{Simple\+Timer@{Simple\+Timer}!Simple\+Timer@{Simple\+Timer}}
+\index{Simple\+Timer@{Simple\+Timer}!Simple\+Timer@{Simple\+Timer}}
+\paragraph[{Simple\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Timer\+::\+Simple\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_simple_timer_af0c18d77bcd3a28f41fb09b3f1358543}
+
+
+Default constructor. 
+
+Constructs Timer class
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+set running flag to false 
+\end{DoxyNote}
+\hypertarget{class_simple_timer_ad29e9a56c18bb1e378b0bd125e50c62a}{}\index{Simple\+Timer@{Simple\+Timer}!````~Simple\+Timer@{$\sim$\+Simple\+Timer}}
+\index{````~Simple\+Timer@{$\sim$\+Simple\+Timer}!Simple\+Timer@{Simple\+Timer}}
+\paragraph[{$\sim$\+Simple\+Timer}]{\setlength{\rightskip}{0pt plus 5cm}Simple\+Timer\+::$\sim$\+Simple\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_simple_timer_ad29e9a56c18bb1e378b0bd125e50c62a}
+
+
+Default constructor. 
+
+Destructs Timer class
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+No data to clear 
+\end{DoxyNote}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{class_simple_timer_afa298cf96261fc9d9af0d6ea8ece2ae6}{}\index{Simple\+Timer@{Simple\+Timer}!start@{start}}
+\index{start@{start}!Simple\+Timer@{Simple\+Timer}}
+\paragraph[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Simple\+Timer\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_simple_timer_afa298cf96261fc9d9af0d6ea8ece2ae6}
+
+
+Start control. 
+
+Takes initial time data
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_simple_timer_a07a7dbb801e7f805f7777fdf8f3ef108}{}\index{Simple\+Timer@{Simple\+Timer}!stop@{stop}}
+\index{stop@{stop}!Simple\+Timer@{Simple\+Timer}}
+\paragraph[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void Simple\+Timer\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_simple_timer_a07a7dbb801e7f805f7777fdf8f3ef108}
+
+
+Stop control. 
+
+Takes final time data, calculates duration
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_simple_timer_8h}{Simple\+Timer.\+h}\item 
+\hyperlink{_simple_timer_8cpp}{Simple\+Timer.\+cpp}\end{DoxyCompactItemize}

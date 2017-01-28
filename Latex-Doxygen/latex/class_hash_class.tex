@@ -1,0 +1,763 @@
+\hypertarget{class_hash_class}{}\subsection{Hash\+Class$<$ Data\+Type $>$ Class Template Reference}
+\label{class_hash_class}\index{Hash\+Class$<$ Data\+Type $>$@{Hash\+Class$<$ Data\+Type $>$}}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hash_class_a29f061b09762f777ec04c0ecde9d0e2f}{Hash\+Class} ()
+\begin{DoxyCompactList}\small\item\em Default/\+Initialization \hyperlink{class_hash_class}{Hash\+Class} constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_hash_class_ac74f631e62f65434795915436f59090b}{Hash\+Class} (const \hyperlink{class_hash_class}{Hash\+Class}$<$ Data\+Type $>$ \&copied)
+\begin{DoxyCompactList}\small\item\em Default/\+Initialization \hyperlink{class_hash_class}{Hash\+Class} copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_hash_class_adbc7fbff24ae74ddac4261133ce80974}{$\sim$\+Hash\+Class} ()
+\begin{DoxyCompactList}\small\item\em destructer \hyperlink{class_hash_class}{Hash\+Class} \end{DoxyCompactList}\item 
+const \hyperlink{class_hash_class}{Hash\+Class} \& \hyperlink{class_hash_class_ad374ee1ee257757c208570267424524d}{operator=} (const \hyperlink{class_hash_class}{Hash\+Class}$<$ Data\+Type $>$ \&rh\+Data)
+\begin{DoxyCompactList}\small\item\em assignment operator \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_class_adb641bb48c4a3609520d18cfce3e78c5}{set\+Table\+Length} (int new\+Table\+Length, bool clear\+List\+Flag, int \&max\+Probes, int \&total\+Probes)
+\begin{DoxyCompactList}\small\item\em set\+Table\+Length \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_class_ae356a1dcd488abedb26b313390b69532}{set\+Hash\+Letter\+Count} (int new\+Hash\+Letter\+Count)
+\begin{DoxyCompactList}\small\item\em set\+Hash\+Letter\+Count \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_class_a54ad53343edfb3db24daf6053c012598}{set\+Probe\+Attempts} (int new\+Num\+Probe\+Attempts)
+\begin{DoxyCompactList}\small\item\em set\+Probe\+Attempts \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_class_a6fb0fa005a8267034b4aeda0c734c993}{add\+Item} (const Data\+Type \&new\+Data, int \&probe\+Attempts)
+\begin{DoxyCompactList}\small\item\em add\+Item \end{DoxyCompactList}\item 
+int \hyperlink{class_hash_class_a2ebff4e648205c9b6f05e05ad80e346e}{find\+Item} (const Data\+Type \&data\+Item, int \&probe\+Attempts) const 
+\begin{DoxyCompactList}\small\item\em find\+Item \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_class_a9943daba32d6a7a653b4ce3a186efc4a}{remove\+Item} (const Data\+Type \&data\+Item, int \&probe\+Attempts)
+\begin{DoxyCompactList}\small\item\em remove\+Item \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_class_ab523a6053adfdfeb99ec2a9521e6af39}{clear\+List} ()
+\begin{DoxyCompactList}\small\item\em clear\+List \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_class_aba14bac2806c2cd58595b6e34e4c015e}{is\+Empty} () const 
+\begin{DoxyCompactList}\small\item\em is\+Empty \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_class_aca0bdfa67198e64503deccc71abb7c06}{show\+Structure} () const 
+\begin{DoxyCompactList}\small\item\em show\+Structure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hash_class_a2655c7f634e469f92d94ef19ae6359a5}{}static const char {\bfseries T\+A\+B} = \textquotesingle{}\textbackslash{}t\textquotesingle{}\label{class_hash_class_a2655c7f634e469f92d94ef19ae6359a5}
+
+\item 
+\hypertarget{class_hash_class_a60d7367b79951aebdaa14160c0fd28f9}{}static const int {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+A\+S\+H\+\_\+\+T\+A\+B\+L\+E\+\_\+\+L\+E\+N\+G\+T\+H} = 10\label{class_hash_class_a60d7367b79951aebdaa14160c0fd28f9}
+
+\item 
+\hypertarget{class_hash_class_aab488475959aa18b80d9a6da69226d91}{}static const int {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+A\+S\+H\+\_\+\+L\+E\+T\+T\+E\+R\+\_\+\+C\+O\+U\+N\+T} = 3\label{class_hash_class_aab488475959aa18b80d9a6da69226d91}
+
+\item 
+\hypertarget{class_hash_class_a9f2bed72919e483bef385bc600ea1811}{}static const int {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+O\+B\+E\+\_\+\+A\+T\+T\+E\+M\+P\+T\+\_\+\+L\+I\+M\+I\+T} = 10\label{class_hash_class_a9f2bed72919e483bef385bc600ea1811}
+
+\item 
+\hypertarget{class_hash_class_ae1156b4f693e670a3134ca09e6ba0313}{}static const int {\bfseries F\+A\+I\+L\+E\+D\+\_\+\+P\+R\+O\+B\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S} = -\/1\label{class_hash_class_ae1156b4f693e670a3134ca09e6ba0313}
+
+\item 
+\hypertarget{class_hash_class_a92c4627fdec3b4cd8cb208873278519d}{}static const int {\bfseries S\+T\+D\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N} = 50\label{class_hash_class_a92c4627fdec3b4cd8cb208873278519d}
+
+\item 
+\hypertarget{class_hash_class_a820c7a9f81e841cbc5bb8d1fe1a3682a}{}static const int {\bfseries L\+A\+R\+G\+E\+\_\+\+S\+T\+R\+\_\+\+L\+E\+N} = 100\label{class_hash_class_a820c7a9f81e841cbc5bb8d1fe1a3682a}
+
+\item 
+\hypertarget{class_hash_class_a870e18392df8ea3a66b8d7bfd57238f6}{}static const bool {\bfseries C\+L\+E\+A\+R\+\_\+\+L\+I\+S\+T} = true\label{class_hash_class_a870e18392df8ea3a66b8d7bfd57238f6}
+
+\item 
+\hypertarget{class_hash_class_a0583ccea96ac8da712a40102ce1732a3}{}static const bool {\bfseries N\+O\+\_\+\+L\+I\+S\+T\+\_\+\+C\+L\+E\+A\+R} = false\label{class_hash_class_a0583ccea96ac8da712a40102ce1732a3}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_hash_class_acb6fbb80f8b20914895647e17da3a17b}{hash} (const Data\+Type \&data\+Item, int working\+Table\+Length) const 
+\begin{DoxyCompactList}\small\item\em hash \end{DoxyCompactList}\item 
+int \hyperlink{class_hash_class_ac21be11d3c6a875ce9a4f36490043218}{add\+Item\+Helper} (\hyperlink{struct_data_node}{Data\+Node}$<$ Data\+Type $>$ $\ast$dest\+Hash\+Table, const Data\+Type \&new\+Data)
+\begin{DoxyCompactList}\small\item\em add\+Item\+Helper \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_class_a057af8f9b6db39d2fe32c77a473b05ac}{resize\+List} (int new\+Size, bool clear\+Flag, int \&max\+Probes, int \&tota\+Probes)
+\begin{DoxyCompactList}\small\item\em resize\+List \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_class_a7961c227e61062fe7291efdf6f6ecf84}{copy\+List} (const \hyperlink{struct_data_node}{Data\+Node}$<$ Data\+Type $>$ $\ast$copied\+List)
+\begin{DoxyCompactList}\small\item\em copy\+List \end{DoxyCompactList}\item 
+int \hyperlink{class_hash_class_aa3271ee470f0d113fb9d40ee5b0112b9}{to\+Power} (int base, int exponent) const 
+\begin{DoxyCompactList}\small\item\em power function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hash_class_a284b1dc265e5e5eedd77c6241ffa08b8}{}int {\bfseries table\+Length}\label{class_hash_class_a284b1dc265e5e5eedd77c6241ffa08b8}
+
+\item 
+\hypertarget{class_hash_class_a806ef0b718c047a157cda25840cf96f8}{}int {\bfseries max\+Probe\+Attempts}\label{class_hash_class_a806ef0b718c047a157cda25840cf96f8}
+
+\item 
+\hypertarget{class_hash_class_a9d1d57807da2c70816b09543fcf616be}{}int {\bfseries hash\+Letter\+Count}\label{class_hash_class_a9d1d57807da2c70816b09543fcf616be}
+
+\item 
+\hypertarget{class_hash_class_a822056a8a1da719f1c359df7b7537ee9}{}\hyperlink{struct_data_node}{Data\+Node}$<$ Data\+Type $>$ $\ast$ {\bfseries hash\+List}\label{class_hash_class_a822056a8a1da719f1c359df7b7537ee9}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hash_class_a29f061b09762f777ec04c0ecde9d0e2f}{}\index{Hash\+Class@{Hash\+Class}!Hash\+Class@{Hash\+Class}}
+\index{Hash\+Class@{Hash\+Class}!Hash\+Class@{Hash\+Class}}
+\paragraph[{Hash\+Class}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Hash\+Class}$<$ Data\+Type $>$\+::{\bf Hash\+Class} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_class_a29f061b09762f777ec04c0ecde9d0e2f}
+
+
+Default/\+Initialization \hyperlink{class_hash_class}{Hash\+Class} constructor. 
+
+sets table\+Length, Max\+Probe\+Attemps,hash\+Letter\+Count,hash\+List
+
+\begin{DoxyPrecond}{Precondition}
+assumes Uninitialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+hash\+Class initizilied
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{N/\+A}
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+None
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_ac74f631e62f65434795915436f59090b}{}\index{Hash\+Class@{Hash\+Class}!Hash\+Class@{Hash\+Class}}
+\index{Hash\+Class@{Hash\+Class}!Hash\+Class@{Hash\+Class}}
+\paragraph[{Hash\+Class}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Hash\+Class}$<$ Data\+Type $>$\+::{\bf Hash\+Class} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hash\+Class}$<$ Data\+Type $>$ \&}]{copied}
+\end{DoxyParamCaption}
+)}\label{class_hash_class_ac74f631e62f65434795915436f59090b}
+
+
+Default/\+Initialization \hyperlink{class_hash_class}{Hash\+Class} copy constructor. 
+
+sets table\+Length, Max\+Probe\+Attemps,hash\+Letter\+Count,hash\+List to copied class
+
+\begin{DoxyPrecond}{Precondition}
+assumes Uninitialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+hash\+Class initizilied
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{N/\+A}
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+copied -\/ a hashclass that has its values copied
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_adbc7fbff24ae74ddac4261133ce80974}{}\index{Hash\+Class@{Hash\+Class}!````~Hash\+Class@{$\sim$\+Hash\+Class}}
+\index{````~Hash\+Class@{$\sim$\+Hash\+Class}!Hash\+Class@{Hash\+Class}}
+\paragraph[{$\sim$\+Hash\+Class}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Hash\+Class}$<$ Data\+Type $>$\+::$\sim${\bf Hash\+Class} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_class_adbc7fbff24ae74ddac4261133ce80974}
+
+
+destructer \hyperlink{class_hash_class}{Hash\+Class} 
+
+deletes dynamic memory
+
+\begin{DoxyPrecond}{Precondition}
+assumes initialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+hash\+Class uninitizilied
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{N/\+A}
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+None
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{class_hash_class_a6fb0fa005a8267034b4aeda0c734c993}{}\index{Hash\+Class@{Hash\+Class}!add\+Item@{add\+Item}}
+\index{add\+Item@{add\+Item}!Hash\+Class@{Hash\+Class}}
+\paragraph[{add\+Item}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Hash\+Class}$<$ Data\+Type $>$\+::add\+Item (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{new\+Data, }
+\item[{int \&}]{probe\+Attempts}
+\end{DoxyParamCaption}
+)}\label{class_hash_class_a6fb0fa005a8267034b4aeda0c734c993}
+
+
+add\+Item 
+
+hashes item and adds it to the hash\+List
+
+\begin{DoxyPrecond}{Precondition}
+assumes initialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+hashes item and adds it to the hash\+List
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{N/\+A}
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+bool of success
+\end{DoxyReturn}
+new\+Data -\/ data to add probe\+Attempts -\/ attempts to add data
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_ac21be11d3c6a875ce9a4f36490043218}{}\index{Hash\+Class@{Hash\+Class}!add\+Item\+Helper@{add\+Item\+Helper}}
+\index{add\+Item\+Helper@{add\+Item\+Helper}!Hash\+Class@{Hash\+Class}}
+\paragraph[{add\+Item\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ int {\bf Hash\+Class}$<$ Data\+Type $>$\+::add\+Item\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Node}$<$ Data\+Type $>$ $\ast$}]{dest\+Hash\+Table, }
+\item[{const Data\+Type \&}]{new\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_hash_class_ac21be11d3c6a875ce9a4f36490043218}
+
+
+add\+Item\+Helper 
+
+does the probing of the add\+Item function
+
+\begin{DoxyPrecond}{Precondition}
+N/a
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+adds data to hashlist and returns probe\+Attempts
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{None }
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em dest\+Hash\+Table,new\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns probe\+Attempts
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_ab523a6053adfdfeb99ec2a9521e6af39}{}\index{Hash\+Class@{Hash\+Class}!clear\+List@{clear\+List}}
+\index{clear\+List@{clear\+List}!Hash\+Class@{Hash\+Class}}
+\paragraph[{clear\+List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Hash\+Class}$<$ Data\+Type $>$\+::clear\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_hash_class_ab523a6053adfdfeb99ec2a9521e6af39}
+
+
+clear\+List 
+
+clears list by setting all to unused
+
+\begin{DoxyPrecond}{Precondition}
+N/a
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+clears list by setting all to unused
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{None }
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_a7961c227e61062fe7291efdf6f6ecf84}{}\index{Hash\+Class@{Hash\+Class}!copy\+List@{copy\+List}}
+\index{copy\+List@{copy\+List}!Hash\+Class@{Hash\+Class}}
+\paragraph[{copy\+List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Hash\+Class}$<$ Data\+Type $>$\+::copy\+List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Node}$<$ Data\+Type $>$ $\ast$}]{copied\+List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_hash_class_a7961c227e61062fe7291efdf6f6ecf84}
+
+
+copy\+List 
+
+copies copied\+List to this list
+
+\begin{DoxyPrecond}{Precondition}
+N/a
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+copies copied\+List to this list
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{None }
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em copied\+List} & -\/ to copy data from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_a2ebff4e648205c9b6f05e05ad80e346e}{}\index{Hash\+Class@{Hash\+Class}!find\+Item@{find\+Item}}
+\index{find\+Item@{find\+Item}!Hash\+Class@{Hash\+Class}}
+\paragraph[{find\+Item}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ int {\bf Hash\+Class}$<$ Data\+Type $>$\+::find\+Item (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{data\+Item, }
+\item[{int \&}]{probe\+Attempts}
+\end{DoxyParamCaption}
+) const}\label{class_hash_class_a2ebff4e648205c9b6f05e05ad80e346e}
+
+
+find\+Item 
+
+returns int of items index
+
+\begin{DoxyPrecond}{Precondition}
+assumes initialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+returns int of items index
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{N/\+A}
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+int of items index
+\end{DoxyReturn}
+data\+Item -\/ data to find probe\+Attempts -\/ attempts to add data
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_acb6fbb80f8b20914895647e17da3a17b}{}\index{Hash\+Class@{Hash\+Class}!hash@{hash}}
+\index{hash@{hash}!Hash\+Class@{Hash\+Class}}
+\paragraph[{hash}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ int {\bf Hash\+Class}$<$ Data\+Type $>$\+::hash (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{data\+Item, }
+\item[{int}]{working\+Table\+Length}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\label{class_hash_class_acb6fbb80f8b20914895647e17da3a17b}
+
+
+hash 
+
+calls hashlist of Data\+Type
+
+\begin{DoxyPrecond}{Precondition}
+N/a
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+returns hash of Data\+Type
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{None }
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Size,clear\+Flag,max\+Probes,total\+Probes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int of hash value
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_aba14bac2806c2cd58595b6e34e4c015e}{}\index{Hash\+Class@{Hash\+Class}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Hash\+Class@{Hash\+Class}}
+\paragraph[{is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Hash\+Class}$<$ Data\+Type $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_hash_class_aba14bac2806c2cd58595b6e34e4c015e}
+
+
+is\+Empty 
+
+returns if there is no data
+
+\begin{DoxyPrecond}{Precondition}
+assumes initialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+returns a bool
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{algorithm}
+calls find\+Item to get index to remove
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+false
+\end{DoxyReturn}
+None
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_ad374ee1ee257757c208570267424524d}{}\index{Hash\+Class@{Hash\+Class}!operator=@{operator=}}
+\index{operator=@{operator=}!Hash\+Class@{Hash\+Class}}
+\paragraph[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ const {\bf Hash\+Class}$<$ Data\+Type $>$ \& {\bf Hash\+Class}$<$ Data\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hash\+Class}$<$ Data\+Type $>$ \&}]{rh\+Data}
+\end{DoxyParamCaption}
+)}\label{class_hash_class_ad374ee1ee257757c208570267424524d}
+
+
+assignment operator 
+
+sets table\+Length, Max\+Probe\+Attemps,hash\+Letter\+Count,hash\+List to rh\+Hash\+Table
+
+\begin{DoxyPrecond}{Precondition}
+assumes initialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+hash\+Class values set to rh\+Hash\+Table values
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{N/\+A}
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+rh\+Hash\+Table -\/ copied values from
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_a9943daba32d6a7a653b4ce3a186efc4a}{}\index{Hash\+Class@{Hash\+Class}!remove\+Item@{remove\+Item}}
+\index{remove\+Item@{remove\+Item}!Hash\+Class@{Hash\+Class}}
+\paragraph[{remove\+Item}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Hash\+Class}$<$ Data\+Type $>$\+::remove\+Item (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{data\+Item, }
+\item[{int \&}]{probe\+Attempts}
+\end{DoxyParamCaption}
+)}\label{class_hash_class_a9943daba32d6a7a653b4ce3a186efc4a}
+
+
+remove\+Item 
+
+returns int of items index
+
+\begin{DoxyPrecond}{Precondition}
+assumes initialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+removes data\+Item
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{algorithm}
+calls find\+Item to get index to remove
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+success of operation
+\end{DoxyReturn}
+data\+Item -\/ data to remove probe\+Attempts -\/ attempts to add data
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_a057af8f9b6db39d2fe32c77a473b05ac}{}\index{Hash\+Class@{Hash\+Class}!resize\+List@{resize\+List}}
+\index{resize\+List@{resize\+List}!Hash\+Class@{Hash\+Class}}
+\paragraph[{resize\+List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Hash\+Class}$<$ Data\+Type $>$\+::resize\+List (
+\begin{DoxyParamCaption}
+\item[{int}]{new\+Size, }
+\item[{bool}]{clear\+Flag, }
+\item[{int \&}]{max\+Probes, }
+\item[{int \&}]{total\+Probes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_hash_class_a057af8f9b6db39d2fe32c77a473b05ac}
+
+
+resize\+List 
+
+clears list if param allows, or makes size bigger
+
+\begin{DoxyPrecond}{Precondition}
+N/a
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+resizes list to the new\+Size
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{None }
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Size,clear\+Flag,max\+Probes,total\+Probes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool if successfull or not
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_ae356a1dcd488abedb26b313390b69532}{}\index{Hash\+Class@{Hash\+Class}!set\+Hash\+Letter\+Count@{set\+Hash\+Letter\+Count}}
+\index{set\+Hash\+Letter\+Count@{set\+Hash\+Letter\+Count}!Hash\+Class@{Hash\+Class}}
+\paragraph[{set\+Hash\+Letter\+Count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Hash\+Class}$<$ Data\+Type $>$\+::set\+Hash\+Letter\+Count (
+\begin{DoxyParamCaption}
+\item[{int}]{new\+Hash\+Letter\+Count}
+\end{DoxyParamCaption}
+)}\label{class_hash_class_ae356a1dcd488abedb26b313390b69532}
+
+
+set\+Hash\+Letter\+Count 
+
+sets hash\+Letter\+Count to new\+Hash\+Letter\+Count
+
+\begin{DoxyPrecond}{Precondition}
+assumes initialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+sets hash\+Letter\+Count to new\+Hash\+Letter\+Count
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{N/\+A}
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+new\+Hash\+Letter\+Count -\/ to change hash\+Letter to
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_a54ad53343edfb3db24daf6053c012598}{}\index{Hash\+Class@{Hash\+Class}!set\+Probe\+Attempts@{set\+Probe\+Attempts}}
+\index{set\+Probe\+Attempts@{set\+Probe\+Attempts}!Hash\+Class@{Hash\+Class}}
+\paragraph[{set\+Probe\+Attempts}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Hash\+Class}$<$ Data\+Type $>$\+::set\+Probe\+Attempts (
+\begin{DoxyParamCaption}
+\item[{int}]{new\+Num\+Probe\+Attempts}
+\end{DoxyParamCaption}
+)}\label{class_hash_class_a54ad53343edfb3db24daf6053c012598}
+
+
+set\+Probe\+Attempts 
+
+Max\+Probe\+Attemps to new\+Num\+Probe\+Attempts
+
+\begin{DoxyPrecond}{Precondition}
+assumes initialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Max\+Probe\+Attemps to new\+Num\+Probe\+Attempts
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{N/\+A}
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+new\+Num\+Probe\+Attempts
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_adb641bb48c4a3609520d18cfce3e78c5}{}\index{Hash\+Class@{Hash\+Class}!set\+Table\+Length@{set\+Table\+Length}}
+\index{set\+Table\+Length@{set\+Table\+Length}!Hash\+Class@{Hash\+Class}}
+\paragraph[{set\+Table\+Length}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Hash\+Class}$<$ Data\+Type $>$\+::set\+Table\+Length (
+\begin{DoxyParamCaption}
+\item[{int}]{new\+Table\+Length, }
+\item[{bool}]{clear\+List\+Flag, }
+\item[{int \&}]{max\+Probes, }
+\item[{int \&}]{total\+Probes}
+\end{DoxyParamCaption}
+)}\label{class_hash_class_adb641bb48c4a3609520d18cfce3e78c5}
+
+
+set\+Table\+Length 
+
+sets table\+Length
+
+\begin{DoxyPrecond}{Precondition}
+assumes initialized hash\+Class object
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+table\+Length to new\+Table\+Length and resizes
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Algorithm}
+calls resize\+List
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+bool of success
+\end{DoxyReturn}
+new\+Table\+Length, clear\+List\+Flag, max\+Probes, Total\+Probes
+
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_aca0bdfa67198e64503deccc71abb7c06}{}\index{Hash\+Class@{Hash\+Class}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!Hash\+Class@{Hash\+Class}}
+\paragraph[{show\+Structure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Hash\+Class}$<$ Data\+Type $>$\+::show\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_hash_class_aca0bdfa67198e64503deccc71abb7c06}
+
+
+show\+Structure 
+
+prints out data of hash\+List in order
+
+\begin{DoxyPrecond}{Precondition}
+N/a
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+prints out data of hash\+List in order
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{None }
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+\hypertarget{class_hash_class_aa3271ee470f0d113fb9d40ee5b0112b9}{}\index{Hash\+Class@{Hash\+Class}!to\+Power@{to\+Power}}
+\index{to\+Power@{to\+Power}!Hash\+Class@{Hash\+Class}}
+\paragraph[{to\+Power}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ int {\bf Hash\+Class}$<$ Data\+Type $>$\+::to\+Power (
+\begin{DoxyParamCaption}
+\item[{int}]{base, }
+\item[{int}]{exponent}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\label{class_hash_class_aa3271ee470f0d113fb9d40ee5b0112b9}
+
+
+power function 
+
+does power operations \begin{DoxyPrecond}{Precondition}
+N/a
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+returns power operation
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Algorithm }
+
+\end{DoxyParagraph}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em base,exponent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+None 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_hash_class_8h}{Hash\+Class.\+h}\item 
+\hyperlink{_hash_class_8cpp}{Hash\+Class.\+cpp}\item 
+Hash\+Class\+\_\+\+Assignment\+Base.\+cpp\end{DoxyCompactItemize}
